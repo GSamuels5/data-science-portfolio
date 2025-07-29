@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            background: #f8f9fa;
+            color: #222;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #222;
+            padding: 0.5rem 1.5rem;
+            position: relative;
+        }
+        .navbar img {
+            height: 48px;
+            border-radius: 50%;
+        }
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .navbar a:hover {
+            color: #00bcd4;
+        }
+        /* Hamburger menu styles */
+        #menu-toggle {
+            display: none;
+        }
+        .menu-icon {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            justify-content: center;
+        }
+        .menu-icon span {
+            width: 25px;
+            height: 3px;
+            background: #fff;
+            margin: 4px 0;
+            border-radius: 2px;
+            display: block;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: #222;
+                position: absolute;
+                top: 64px;
+                right: 0;
+                width: 180px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+                z-index: 10;
+            }
+            #menu-toggle:checked + .menu-icon + .nav-links {
+                display: flex;
+            }
+            .menu-icon {
+                display: flex;
+            }
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            padding: 2rem;
+        }
+        h1 {
+            margin-top: 0;
+            font-size: 2.5rem;
+            color: #222;
+        }
+        .intro {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 2rem;
+        }
+        .intro img {
+            width: 140px;
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .intro-text {
+            flex: 1;
+        }
+        .projects {
+            margin-top: 2rem;
+        }
+        .project {
+            margin-bottom: 1.5rem;
+        }
+        .project-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #00bcd4;
+        }
+        .project-desc {
+            margin: 0.3rem 0 0.7rem 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="../Styling/Images/1711773185043.jpg" alt="Profile">
+        <input type="checkbox" id="menu-toggle" />
+        <label class="menu-icon" for="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <div class="container">
+        <section class="intro" id="about">
+            <img src="../Styling/Images/1711773185043.jpg" alt="Profile">
+            <div class="intro-text">
+                <h1>Ghamzah Samuels</h1>
+                <p>Aspiring Data Scientist with expertise in machine learning, data visualization, and statistical analysis. Passionate about transforming data into actionable insights and building impactful solutions.</p>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <h2>Featured Projects</h2>
+            <div class="project">
+                <div class="project-title">Predictive Analytics for Retail</div>
+                <div class="project-desc">Developed a machine learning model to forecast sales and optimize inventory for a major retailer, resulting in a 15% reduction in stockouts.</div>
+            </div>
+            <div class="project">
+                <div class="project-title">Customer Segmentation Dashboard</div>
+                <div class="project-desc">Built an interactive dashboard using Python and Plotly to segment customers and visualize key metrics for marketing strategies.</div>
+            </div>
+            <div class="project">
+                <div class="project-title">NLP for Sentiment Analysis</div>
+                <div class="project-desc">Implemented natural language processing techniques to analyze customer feedback and extract actionable insights for product improvement.</div>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python,  SQL</li>
+                <li>Machine Learning & Deep Learning</li>
+                <li>Data Visualization (Tableau, Power BI, Matplotlib)</li>
+                <li>Statistical Analysis</li>
+                <li>Big Data </li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: ghamzahsamuels23@gmail.com </p>
+            <p>LinkedIn: <a href="">https://www.linkedin.com/in/ghamzahsamuels</a></p>
+        </section>
+    </div>
+</body>
+</html>
