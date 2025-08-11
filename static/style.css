@@ -1,0 +1,118 @@
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #183B4E;
+            color: #F3F3E0;
+            
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #27548A;
+            padding: 0.5rem 1.5rem;
+            position: relative;
+        }
+        .navbar img {
+            height: 48px;
+            border-radius: 50%;
+        }
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .navbar a:hover {
+            color: #00bcd4;
+        }
+        /* Hamburger menu styles */
+        #menu-toggle {
+            display: none;
+        }
+        .menu-icon {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            justify-content: center;
+        }
+        .menu-icon span {
+            width: 25px;
+            height: 3px;
+            background: #fff;
+            margin: 4px 0;
+            border-radius: 2px;
+            display: block;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: #222;
+                position: absolute;
+                top: 64px;
+                right: 0;
+                width: 180px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+                z-index: 10;
+            }
+            #menu-toggle:checked + .menu-icon + .nav-links {
+                display: flex;
+            }
+            .menu-icon {
+                display: flex;
+            }
+        }
+      .container {
+    max-width: 900px;       /* keeps content from stretching too wide */
+    margin: 0 auto;         /* horizontally centers the container */
+    padding: 2rem;          /* adds spacing inside */
+}
+        h1 {
+            margin-top: 0;
+            font-size: 2.5rem;
+            color: #222;
+        }
+        .intro {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            
+            gap: 2rem;
+        }
+        .intro img {
+            /* width: 140px; */
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        section{
+            
+            height: 100vh;
+        }
+
+        .intro-text {
+            flex: 1;
+        }
+        .projects {
+            margin-top: 2rem;
+        }
+        .project {
+            margin-bottom: 1.5rem;
+        }
+        .project-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #00bcd4;
+        }
+        .project-desc {
+            margin: 0.3rem 0 0.7rem 0;
+        }
+    

@@ -9,14 +9,16 @@
         body {
             font-family: 'Roboto', Arial, sans-serif;
             margin: 0;
-            background: #f8f9fa;
-            color: #222;
+            padding: 0;
+            background: #183B4E;
+            color: #F3F3E0;
+            
         }
         .navbar {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background: #222;
+            background: #27548A;
             padding: 0.5rem 1.5rem;
             position: relative;
         }
@@ -76,14 +78,11 @@
                 display: flex;
             }
         }
-        .container {
-            max-width: 900px;
-            margin: 2rem auto;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-            padding: 2rem;
-        }
+      .container {
+    max-width: 900px;       /* keeps content from stretching too wide */
+    margin: 0 auto;         /* horizontally centers the container */
+    padding: 2rem;          /* adds spacing inside */
+}
         h1 {
             margin-top: 0;
             font-size: 2.5rem;
@@ -93,13 +92,19 @@
             display: flex;
             flex-wrap: wrap;
             align-items: center;
+            
             gap: 2rem;
         }
         .intro img {
-            width: 140px;
+            /* width: 140px; */
             border-radius: 50%;
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
+        section{
+            top: 0;
+            height: 100vh;
+        }
+
         .intro-text {
             flex: 1;
         }
@@ -137,11 +142,13 @@
     </nav>
     <div class="container">
         <section class="intro" id="about">
-            <img src="../Styling/Images/1711773185043.jpg" alt="Profile">
-            <div class="intro-text">
-                <h1>Ghamzah Samuels</h1>
-                <p>Aspiring Data Scientist with expertise in machine learning, data visualization, and statistical analysis. Passionate about transforming data into actionable insights and building impactful solutions.</p>
-            </div>
+            <div class="row">    <div class="col"><img src="../Styling/Images/1711773185043.jpg" alt="Profile"></div>
+            <div class="col"><h1>Welcome to the portfolio of an Aspiring Data Science : Ghamzah Samuels</h1>
+                <p>Aspiring Data Scientist with expertise in machine learning, data visualization, and statistical analysis. 
+                    Passionate about transforming data into actionable insights and building impactful solutions.</p></div></div>
+        
+            
+           
         </section>
         <section class="projects" id="projects">
             <h2>Featured Projects</h2>
