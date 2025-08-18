@@ -52,6 +52,7 @@
             border-radius: 2px;
             display: block;
         }
+        
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
@@ -92,6 +93,11 @@
             /* width: 140px; */
             border-radius: 50%;
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        #circle{
+            height: 250px;
+            width: 110px;
+            border: #F3F3E0 solid 10px;
         }
         section{
             
